@@ -24,7 +24,10 @@ Installation:
 Clone the repository
 
 git clone https://github.com/toomanytonys/ai-soc-bot-outline.git
+
 cd ai-soc-bot-outline
+
+
 Install dependencies:
 
 
@@ -36,12 +39,14 @@ Usage
 Open code editor of your choice either:
 
 Option A: Directly in code (quick and dirty)
+
 Edit this line in your Python file:
 
 openai.api_key = "your-api-key-here"
 
 
 Option B: Use a .env file (recommended for security)
+
 Create a file named .env:
 
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxx
@@ -49,6 +54,7 @@ OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxx
 Install dotenv:
 
 pip install python-dotenv
+
 In your script:
 
 
@@ -60,10 +66,9 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 Run the main analyzer script:
 
-bash
 python ai_soc_bot.py
 
-Contributing
+
 Contributions are welcome! Please open an issue or submit a pull request for bug fixes, or improvements, this is my first GitHub project so all input is welcome
 
 
