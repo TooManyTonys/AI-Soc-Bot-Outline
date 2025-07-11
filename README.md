@@ -20,18 +20,44 @@ Python 3.8 or higher
 
 Required libraries (OpenAi, pandas)
 
-Installation
+Installation:
 Clone the repository
-bash
+
 git clone https://github.com/toomanytonys/ai-soc-bot-outline.git
 cd ai-soc-bot-outline
 Install dependencies:
 
-bash
+
 pip install -r openai pandas
-Configure your data sources and alert settings (see config.yaml or similar).
+
 
 Usage
+
+Open code editor of your choice either:
+
+Option A: Directly in code (quick and dirty)
+Edit this line in your Python file:
+
+openai.api_key = "your-api-key-here"
+
+
+Option B: Use a .env file (recommended for security)
+Create a file named .env:
+
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxx
+
+Install dotenv:
+
+pip install python-dotenv
+In your script:
+
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 Run the main analyzer script:
 
 bash
@@ -40,9 +66,4 @@ python ai_soc_bot.py
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request for bug fixes, or improvements, this is my first GitHub project so all input is welcome
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
-For questions or support, contact [your-email@example.com].
 
