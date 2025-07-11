@@ -21,7 +21,7 @@ Python 3.8 or higher
 Required libraries (OpenAi, pandas)
 
 Installation
-Clone the repository:
+Clone the repository
 bash
 git clone https://github.com/toomanytonys/ai-soc-bot-outline.git
 cd ai-soc-bot-outline
