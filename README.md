@@ -23,7 +23,7 @@ Required libraries (OpenAi, pandas)
 Installation
 Clone the repository:
 bash
-git clone https://github.com/your-username/ai-soc-bot-outline.git
+git clone https://github.com/toomanytonys/ai-soc-bot-outline.git
 cd ai-soc-bot-outline
 Install dependencies:
 
